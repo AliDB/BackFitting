@@ -1,15 +1,10 @@
----
-output:
-  rmarkdown: github_document
-  html_document: default
-  pdf_document: default
----
-#BackFitting Algorithm
 
-In this file, I am trying to show how we can fit a funtion to a model by using BackFitting algorithm.
-This file is part of my project for Advanced Data Mining course with Prof. Culp.
-```{r}
+BackFitting Algorithm
+=====================
 
+In this file, I am trying to show how we can fit a funtion to a model by using BackFitting algorithm. This file is part of my project for Advanced Data Mining course with Prof. Culp.
+
+``` r
 #############
 ### Fitting gam simulation example
 #############
@@ -76,5 +71,6 @@ for (m in 1:1000){
 eta=as.vector(alp*ones+f1+f2)
 zs0<-g1$xyz.convert(x1,x2,eta)
 lines(zs0$x,zs0$y,col=4,lwd=2)
-
 ```
+
+![](BackFitting_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-1-1.png)
